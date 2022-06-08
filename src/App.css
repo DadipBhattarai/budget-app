@@ -1,38 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.viewBudget {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(187, 181, 181);
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.editBudget {
+  display: flex;
+  align-items: center;
+  background-color: rgb(151, 162, 172);
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.inputBudget {
+  flex: 1;
+  padding: 5px 10px;
+  outline: none;
+}
+.remainigBudget {
+  background-color: rgb(145, 141, 158);
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.spentBudget {
+  background-color: rgb(145, 141, 158);
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.list-items {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.batch {
+  background-color: blue;
+  padding: 5px;
+  border-radius: 20px;
+  color: #fff;
+}
+.input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  background-color: rgb(221, 219, 219);
+  margin-bottom: 5px;
+  outline: none;
+  border: 1px solid rgb(107, 106, 106);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.save {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
